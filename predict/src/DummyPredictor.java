@@ -15,8 +15,8 @@ public class DummyPredictor extends Predictor {
         BufferedReader bufferedReader = null;
         ArrayList<DataPoint> dataPoints = new ArrayList<>();
         try {
-            inputStream = new FileInputStream(filename);// 文件输入流
-            bufferedReader = new BufferedReader(new InputStreamReader(inputStream));// 缓冲输入流
+            inputStream = new FileInputStream(filename);
+            bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
             String line = null;
             while ((line = bufferedReader.readLine())!=null){
                 String[] s = line.split(" ");
